@@ -1,7 +1,7 @@
 export async function generateMetadata(){
     //DEO Data Fetch
     return {
-        title:"Projects"
+        title:"Login"
     }
 }
 

@@ -50,7 +50,7 @@ const SiteNavBar = () => {
         <div>
             <nav className='relative px-6 py-6 flex justify-between items-center bg-white'>
                 <a className='text-3xl font-bold leading-none' href='#'>
-                    <img className='h-12' src='atis-assets/logo/atis/atis-mono-black.svg' alt='' width='auto'/>
+                    Dream House
                 </a>
                 <div className='lg:hidden'>
                     <button onClick={()=>{NavClick()}} className='navbar-burger flex items-center text-green-600 p-3'>
@@ -70,7 +70,7 @@ const SiteNavBar = () => {
                         </svg>
                     </li>
                     <li>
-                        <Link className={current==="/team"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "} href={"/dashboard"}>Dashboard</Link>
+                        <Link className={current==="/team"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "} href={"/deposit"}>Deposit</Link>
                     </li>
                     <li className='text-gray-300'>
                         <svg className='w-4 h-4 current-fill' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
@@ -78,7 +78,23 @@ const SiteNavBar = () => {
                         </svg>
                     </li>
                     <li>
-                        <Link  className={current==="/services"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "} href={'/services'}>Summery</Link>
+                        <Link  className={current==="/services"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "} href={'/interest'}>Interest</Link>
+                    </li>
+                    <li className='text-gray-300'>
+                        <svg className='w-4 h-4 current-fill' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z'/>
+                        </svg>
+                    </li>
+                    <li>
+                        <Link  className={current==="/services"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "} href={'/penanty'}>Penanty</Link>
+                    </li>
+                    <li className='text-gray-300'>
+                        <svg className='w-4 h-4 current-fill' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z'/>
+                        </svg>
+                    </li>
+                    <li>
+                        <Link  className={current==="/services"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "} href={'/expense'}>Expense</Link>
                     </li>
 
         
@@ -88,7 +104,7 @@ const SiteNavBar = () => {
                         </svg>
                     </li>
                     <li>
-                        <Link className={current==="/testimonials"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "}  href={'/testimonials'}>Login</Link>
+                        <Link className={current==="/testimonials"?"text-sm text-green-600 font-bold":"text-sm text-gray-400 hover:text-gray-500 "}  href={'/login'}>Login</Link>
                     </li>
                 </ul>
             </nav>
@@ -109,19 +125,22 @@ const SiteNavBar = () => {
                     <div>
                         <ul>
                             <li className='mb-1'>
-                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/'}>Start</Link>
+                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/'}>Home</Link>
                             </li>
                             <li className='mb-1'>
-                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/team'}>Team</Link>
+                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/deposit'}>Deposit</Link>
                             </li>
                             <li className='mb-1'>
-                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/services'}>Services</Link>
+                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/interest'}>Interest</Link>
                             </li>
                             <li className='mb-1'>
-                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/projects'}>Projects</Link>
+                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/penanty'}>Penanty</Link>
                             </li>
                             <li className='mb-1'>
-                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/testimonials'}>Testimonials</Link>
+                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/expense'}>Expense</Link>
+                            </li>
+                            <li className='mb-1'>
+                                <Link className='block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded' href={'/login'}>Login</Link>
                             </li>
                         </ul>
                     </div>

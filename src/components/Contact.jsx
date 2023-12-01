@@ -45,22 +45,16 @@ const Contacts = () => {
                             <div className="mb-6 py-8 px-6 bg-white shadow rounded-t-3xl rounded-bl-3xl text-center">
                                 <form onSubmit={FormSubmit} action="">
                                     <div className="mb-6">
-                                        <span className="text-sm text-gray-400">Sign Up</span>
-                                        <h4 className="text-2xl">Create an account</h4>
+                                        <span className="text-sm text-gray-400">Please login first.</span>
+                                    
                                     </div>
-                                    <div className="mb-4 flex flex-wrap -mx-2">
-                                        <div className="mb-4 lg:mb-0 w-full lg:w-1/2 px-2">
-                                            <input value={FormValue.fname} onChange={(e)=>{inputOnChange('fname',e.target.value)}} className="py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="text" placeholder="First Name"/>
-                                        </div>
-                                        <div className="w-full lg:w-1/2 px-2">
-                                            <input value={FormValue.lname} onChange={(e)=>{inputOnChange('lname',e.target.value)}} className="py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="text" placeholder="Last Name"/>
-                                        </div>
-                                    </div>
-                                    <input  value={FormValue.email} onChange={(e)=>{inputOnChange('email',e.target.value)}} className="mb-4 py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="email" placeholder="hello@example.com"/>
-                                    <textarea value={FormValue.msg} onChange={(e)=>{inputOnChange('msg',e.target.value)}} className="mb-4 py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="email" placeholder="Message"/>
+
+                                    <input  value={FormValue.email} onChange={(e)=>{inputOnChange('email',e.target.value)}} className="mb-4 py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="text" placeholder="User Name"/>
+                                    <input  value={FormValue.email} onChange={(e)=>{inputOnChange('email',e.target.value)}} className="mb-4 py-2 px-3 w-full bg-gray-50 rounded leading-loose" type="text" placeholder="Password"/>
+
 
                                     <button type={"submit"} className="mb-4 py-4 w-full rounded text-sm bg-green-600 hover:bg-green-700 text-white font-bold leading-normal transition duration-200">
-                                        Send
+                                        Login
                                     </button>
                                 </form>
                             </div>
